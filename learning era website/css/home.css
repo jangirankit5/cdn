@@ -1,0 +1,53 @@
+.btn-3d {
+    background-color: #007bff; 
+    color: #ffffff; 
+    border: 2px solid #0056b3; /* Dark blue border */
+    box-shadow: 
+        0 0 0 4px #cce5ff, /* Shadow that represents the 10x10 square beneath */
+        0 6px 8px rgba(0, 0, 0, 0.15), /* Soft shadow for depth */
+        0 12px 16px rgba(0, 0, 0, 0.1); /* Larger shadow for realism */
+    transition: all 0.2s ease;
+    position: relative;
+    margin: 10px; /* Add some space around the button */
+}
+
+.btn-3d:hover {
+    transform: translateY(-4px); /* Move the button up on hover */
+    box-shadow: 
+        0 0 0 4px #cce5ff,
+        0 8px 10px rgba(0, 0, 0, 0.15),
+        0 16px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-3d:active {
+    transform: translateY(4px);
+    box-shadow: 
+        0 0 0 4px #cce5ff,
+        0 2px 4px rgba(0, 0, 0, 0.15),
+        0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.news-ticker {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: ticker 15s linear infinite; /* Slowing down the ticker speed */
+}
+.news-ticker:hover {
+    animation-play-state: paused;
+}
+@keyframes ticker {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}

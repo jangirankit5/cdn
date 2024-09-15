@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.result-value {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.normalized-rank {
+    color: #dc3545;
+}
+
+.category-rank {
+    color: #fd7e14;
+}
+
+.normalized-score {
+    color: #20c997;
+}
+
+.shift-median {
+    color: #6f42c1;
+}
+
+@media (max-width: 600px) {
+    .result-value {
+        font-size: 1.2em;
+    }
+}

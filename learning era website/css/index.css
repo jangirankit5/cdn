@@ -1,0 +1,62 @@
+/* static/css/index.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #dbc7c7;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+.btn-custom {
+    background-color: #e8491d;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.btn-custom:hover {
+    background-color: #ff6a3c;
+}
+
+.feature {
+    background: #35424a;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    background: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.social-btn:hover {
+    background: #45a049;
+}
+
+.youtube {
+    background: #FF0000;
+}
+
+.youtube:hover {
+    background: #CC0000;
+}
+
+.telegram {
+    background: #0088cc;
+}
+
+.telegram:hover {
+    background: #006699;
+}
