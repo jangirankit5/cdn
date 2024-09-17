@@ -65,7 +65,7 @@
 
   @layer utilities {
     .animate-scrollRight {
-      animation: scrollRight 10s linear infinite;
+      animation: scrollRight 15s linear infinite;
     }
     .pause-on-hover:hover {
       animation-play-state: paused;
