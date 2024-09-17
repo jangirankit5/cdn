@@ -38,16 +38,20 @@
         opacity: 1;
     }
 }
-.news-ticker {
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    animation: ticker 15s linear infinite; /* Slowing down the ticker speed */
-}
-.news-ticker:hover {
-    animation-play-state: paused;
-}
-@keyframes ticker {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-}
+@keyframes scrollRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @layer utilities {
+    .animate-scrollRight {
+      animation: scrollRight 10s linear infinite;
+    }
+    .pause-on-hover:hover {
+      animation-play-state: paused;
+    }
+  }
